@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do It Your Self</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="@@ENDERECO_DO_CSS">
+</head>
+<body>
+    <main>
+        <h1>Exercicio Grunt Compila Less</h1>
+        <form id="form-calculadora">
+            <h2>Calculadora de Media</h2>
+            <label for="nome-completo">Nome completo</label>
+            <input type="text" id="nome-completo" required>
+            <div class="notas">
+                <label for="nota-1">Nota 1</label>
+                <input id="nota-1" type="number" required max="10.0" min="0.0">
+                <label for="nota-2">Nota 2</label>
+                <input id="nota-2" type="number" required max="10.0" min="0.0">
+                <label for="nota-3">Nota 3</label>
+                <input id="nota-3" type="number" required max="10.0" min="0.0">
+            </div>
+            <button type="submit">Calcular</button>
+        </form>
+        <div class="resultado">
+            Sua media foi: <span id="resultado-valor"></span>
+        </div>
+    </main>
+    <script src="@@ENDERECO_DO_JS"></script>
+</body>
+</html>

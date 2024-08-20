@@ -1,0 +1,70 @@
+@fonteTitulo: "Nova Square", sans-serif;
+@fontepricipal: "Gruppo", sans-serif;
+@corDeFundo: #81ecec;
+@corDotexto: #2d3436;
+@corDoBotao: #74b9ff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: @corDeFundo;
+    color: @corDotexto;
+    font-family: @fontepricipal;
+}
+
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+        font-family: @fonteTitulo;
+        font-size: 4em;
+        margin: 86px 0;
+    }
+
+    form {
+        font-size: 1.5em;
+
+        label, input {
+            padding: 6px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 24px;
+        }
+        .notas {
+            margin-top: 24px;
+        }
+
+        button {
+            margin-top: 24px;
+            background-color: @corDoBotao;
+            padding: 16px;
+            border-radius: 8px;
+            font-family: @fontepricipal;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.resultado {
+    margin-top: 32px;
+    display: none;
+    font-size: 2em;
+
+    span {
+        display: block;
+        font-weight: bold;
+        font-size: 3em;
+        border-bottom: 2px solid @corDotexto;
+        border-radius: 8px;
+    }
+}
